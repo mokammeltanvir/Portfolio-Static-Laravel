@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@yield('title') | Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		@include('frontend.layouts.inc.style')
+   </head>
+
+   <body>
+   <!-- Header Start -->
+   @include('frontend.layouts.inc.header')
+    <!-- Header End -->
+    <main>
+        <!-- Manin Page Content Start -->
+        @yield('content')
+        <!-- Manin Page Content End -->
+
+    </main>
+
+    <!-- Footer Start-->
+    @include('frontend.layouts.inc.footer')
+        <!-- Footer End-->
+
+
+   @include('frontend.layouts.inc.script')
+
+    </body>
+</html>
