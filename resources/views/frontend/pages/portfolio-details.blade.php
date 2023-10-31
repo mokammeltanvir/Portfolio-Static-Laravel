@@ -29,8 +29,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="portfolio-img">
-                    <div class="details-img mb-40">
-                        <img src="assets/img/gallery/portfolio.png" alt="">
+                    <div class="mb-40">
+                        <img src="{{ asset('assets/frontend/img/service/' . $project['image']) }}" alt="Portfolio Image">
                     </div>
                 </div>
             </div>
@@ -38,12 +38,10 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="details-caption pl-50">
-                    <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+                    <h1>{{ $project['title'] }}</h1>
 
-                    <p class="mb-50">Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
+                    <p class="mb-50">{{ $project['description'] }}</p>
 
-                    <h3>How can we help?</h3>
-                    <p>Mollit anim laborum.Dvcuis aute iruxvfg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa cupidatat non aute iruxvfg dhjinulpadeserunt mollitemnth incididbnt ut;o5tu layjobore mofllit anim.Mollit anim laborum.Dvcuis aute iruxvfg.</p>
 
                 </div>
             </div>
@@ -51,8 +49,10 @@
     </div>
 </div>
 <!-- Services Details End -->
+
+
 <!-- Contact Info Start -->
-<div class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
+{{-- <div class="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-xl-5 col-lg-7">
@@ -72,6 +72,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Contact Info End -->
 @endsection

@@ -1,0 +1,41 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "image": "services1.png",
+            "title": "Project 1",
+            "description": "Description of Project 1. lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 2,
+            "image": "services2.png",
+            "title": "Project 2",
+            "description": "Description of Project 2.lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 3,
+            "image": "services3.png",
+            "title": "Project 3",
+            "description": "Description of Project 3. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 4,
+            "image": "services4.png",
+            "title": "Project 4",
+            "description": "Description of Project 4. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 5,
+            "image": "services5.png",
+            "title": "Project 5",
+            "description": "Description of Project 5. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 6,
+            "image": "services6.png",
+            "title": "Project 6",
+            "description": "Description of Project 6. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+
+    ]
+}

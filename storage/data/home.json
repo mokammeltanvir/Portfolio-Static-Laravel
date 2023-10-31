@@ -1,0 +1,92 @@
+{
+    "hero": [
+        {
+            "name": "Mokammel Tanvir",
+            "image": "portfolio1.jpg",
+            "description": "I'm a passionate web developer with a love for creating innovative and user-friendly web applications. My skills include HTML, CSS, JavaScript, and PHP. I'm dedicated to delivering high-quality solutions that meet client needs."
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "title": "Web Development",
+            "description": "We specialize in creating dynamic and responsive websites tailored to your needs."
+        },
+        {
+            "id": 2,
+            "title": "Mobile App Development",
+            "description": "Our team excels in developing native and cross-platform mobile applications."
+        },
+        {
+            "id": 3,
+            "title": "UI/UX Design",
+            "description": "We craft beautiful user interfaces and engaging user experiences for your applications."
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "Project A",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "image": "projectA.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Project B",
+            "description": "Sed auctor tortor eu nisi lacinia, nec facilisis odio varius.",
+            "image": "projectB.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Project C",
+            "description": "Vestibulum auctor arcu ut libero vehicula, vel tincidunt libero congue.",
+            "image": "projectC.jpg"
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "image": "blog1.png",
+            "position": "CEO, Company ABC",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "image": "blog2.png",
+            "position": "CEO, Company ABC",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 3,
+            "name": "John Doe",
+            "image": "blog3.png",
+            "position": "CEO, Company ABC",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 4,
+            "name": "Jane Doe",
+            "image": "blog1.png",
+            "position": "CEO, Company ABC",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 5,
+            "name": "John Doe",
+            "image": "blog2.png",
+            "position": "CEO, Company ABC",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 6,
+            "name": "Jane Doe",
+            "image": "blog3.png",
+            "position": "CEO, Company ABC",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+
+
+    ]
+}

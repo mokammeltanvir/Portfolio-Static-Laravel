@@ -11,8 +11,8 @@
                             <div class="col-xl-6 col-lg-6 col-md-8">
                                 <div class="hero__caption">
                                     <span data-animation="fadeInUp" data-delay=".4s">Get Every Single Solutions.</span>
-                                    <h1 data-animation="fadeInUp" data-delay=".6s">I’m Designer Haris F. Watson</h1>
-                                    <P data-animation="fadeInUp" data-delay=".8s" >jhorem rfpsum golor sidt amet, consectetur adipiscing elit, eiusmod tempor incididunt utcjhg labore bet dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</P>
+                                    <h1 data-animation="fadeInUp" data-delay=".6s">{{ $homeData['hero'][0]['name'] }}</h1>
+                                    <P data-animation="fadeInUp" data-delay=".8s" >{{ $homeData['hero'][0]['description']}}</P>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn">
                                         <a href="industries.html" class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".8s">Learn More</a>
@@ -82,39 +82,19 @@
                     </div>
                 </div>
                 <div class="row">
+                    @foreach ($homeData['services'] as $service)
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="single-cat text-center mb-50">
                             <div class="cat-icon">
                                 <span class="flaticon-pen"></span>
                             </div>
                             <div class="cat-cap">
-                                <h5><a href="services.html">UI/UX Design</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
+                                <h5><a href="{{route('services')}}">{{ $service['title'] }}</a></h5>
+                                <p>{{ $service['description'] }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-speaker"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Digital Marketing</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cat text-center mb-50">
-                            <div class="cat-icon">
-                                <span class="flaticon-portfolio"></span>
-                            </div>
-                            <div class="cat-cap">
-                                <h5><a href="services.html">Website Design</a></h5>
-                                <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                            </div>
-                        </div>
-                    </div>
+                @endforeach
                  </div>
             </div>
         </section>
@@ -427,74 +407,24 @@
                 <div class="container">
                     <div class="custom-row">
                         <div class="blog-active">
-                            <!-- single-items -->
+                            @foreach ($homeData['testimonials'] as $testimonial)
                             <div class="col-xl-4">
                                 <div class="blog-wrapper">
                                     <div class="blog-inner">
-                                    <div class="blog-top">
+                                        <div class="blog-top">
                                             <div class="person-img">
-                                                <img src="{{asset('assets/frontend')}}/img/gallery/blog1.png" alt="">
+                                                <img src="{{ asset('assets/frontend/img/gallery/' . $testimonial['image']) }}" alt="">
                                             </div>
                                             <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>
-                                                <span>UI/UX Designer</span>
+                                                <h2>{{ $testimonial['name'] }}</h2>
+                                                <span>{{ $testimonial['position'] }}</span>
                                             </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
+                                        </div>
+                                        <p>{{ $testimonial['description'] }}</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="{{asset('assets/frontend')}}/img/gallery/blog2.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="{{asset('assets/frontend')}}/img/gallery/blog3.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single-items -->
-                            <div class="col-xl-4">
-                                <div class="blog-wrapper">
-                                    <div class="blog-inner">
-                                    <div class="blog-top">
-                                            <div class="person-img">
-                                                <img src="{{asset('assets/frontend')}}/img/gallery/blog2.png" alt="">
-                                            </div>
-                                            <div class="comment-person">
-                                                <h2>Bradley Erickson</h2>
-                                                <span>UI/UX Designer</span>
-                                            </div>
-                                    </div>
-                                        <p>Consectetur adipisicing elit, seddosdoe eiusmod tempor incididunt utore etstes dolore magna aliqua. Ut imminim restai veniam, quis nostrud.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        @endforeach
                         </div>
                     </div>
                 </div>

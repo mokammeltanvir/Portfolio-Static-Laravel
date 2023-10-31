@@ -13,22 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.pages.home');
-});
+Route::get('/', 'App\Http\Controllers\PortfolioController@home')->name('home');
 
-Route::get('/about', function () {
-    return view('frontend.pages.about');
-});
 
-Route::get('/services', function () {
-    return view('frontend.pages.services');
-});
+Route::get('/about', 'App\Http\Controllers\PortfolioController@about')->name('about');
 
-Route::get('/portfolio', function () {
-    return view('frontend.pages.portfolio');
-});
 
-Route::get('/portfolio-details', function () {
-    return view('frontend.pages.portfolio-details');
-});
+
+Route::get('/services', 'App\Http\Controllers\PortfolioController@services')->name('services');
+
+Route::get('/portfolio', 'App\Http\Controllers\PortfolioController@portfolio')->name('portfolio');
+Route::get('/portfolio/{id}', 'App\Http\Controllers\PortfolioController@portfolioDetail')->name('portfolio-details');
+
+
+Route::get('/contact', 'App\Http\Controllers\PortfolioController@contact')->name('contact');

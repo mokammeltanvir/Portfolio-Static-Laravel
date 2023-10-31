@@ -1,0 +1,40 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "name": "Web Development",
+            "flaticon": "flaticon-pen",
+            "description": "We offer custom web development services using the latest technologies to build responsive and scalable web applications."
+        },
+        {
+            "id": 2,
+            "name": "Mobile App Development",
+            "flaticon": "flaticon-speaker",
+            "description": "We specialize in developing native and hybrid mobile applications for iOS and Android platforms."
+        },
+        {
+            "id": 3,
+            "name": "UI/UX Design",
+            "flaticon": "flaticon-portfolio",
+            "description": "Our team of designers create visually stunning and user-friendly interfaces for web and mobile applications."
+        },
+        {
+            "id": 4,
+            "name": "Quality Assurance",
+            "flaticon": "flaticon-pen",
+            "description": "We offer quality assurance and testing services to ensure that your application is bug-free and ready for deployment."
+        },
+        {
+            "id": 5,
+            "name": "DevOps",
+            "flaticon": "flaticon-speaker",
+            "description": "We offer DevOps services to help you automate your software development processes and improve efficiency."
+        },
+        {
+            "id": 6,
+            "name": "Cloud Computing",
+            "flaticon": "flaticon-portfolio",
+            "description": "We offer cloud computing services to help you migrate your applications to the cloud and improve scalability."
+        }
+    ]
+}

@@ -26,73 +26,19 @@
 <section class="categories-area categories-area2  section-padding30">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
-                        <span class="flaticon-pen"></span>
+            @foreach ($servicesData['services'] as $service)
+         <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat text-center mb-50">
+                            <div class="cat-icon">
+                                <span class="{{ $service['flaticon'] }}"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a href="services.html">{{ $service['name']}}</a></h5>
+                                <p>{{ $service['description' ]}}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">UI/UX Design</a></h5>
-                        <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
-                        <span class="flaticon-speaker"></span>
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Digital Marketing</a></h5>
-                        <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
-                        <span class="flaticon-portfolio"></span>
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Website Design</a></h5>
-                        <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
-                        <span class="flaticon-portfolio"></span>
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Website Design</a></h5>
-                        <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
-                        <span class="flaticon-speaker"></span>
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Digital Marketing</a></h5>
-                        <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
-                        <span class="flaticon-pen"></span>
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">UI/UX Design</a></h5>
-                        <p>Free resource that will help nderstand thecv designc process and improve theroi  nderstand the design process andisei impro are of vquality.</p>
-                    </div>
-                </div>
-            </div>
-         </div>
+            @endforeach
     </div>
 </section>
 <!-- Categories Area End -->

@@ -59,47 +59,15 @@
                     <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="services-caption">
                             <div class="row">
-                                <div class="col-lg-8 col-md-8 col-sm-8">
-                                    <!-- Single -->
-                                    <div class="single-services mb-30">
-                                        <img src="assets/img/service/services1.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <!-- Single -->
-                                            <div class="single-services mb-30">
-                                                <img src="assets/img/service/services2.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <!-- Single -->
-                                            <div class="single-services mb-30">
-                                                <img src="assets/img/service/services3.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <!-- Single -->
-                                    <div class="single-services mb-30">
-                                        <img src="assets/img/service/services4.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <!-- Single -->
-                                    <div class="single-services mb-30">
-                                        <img src="assets/img/service/services5.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <!-- Single -->
-                                    <div class="single-services mb-30">
-                                        <img src="assets/img/service/services6.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                                @foreach ($projectsData['projects'] as $project)
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="single-services mb-30">
+                        <a href="{{ route('portfolio-details', ['id' => $project['id']]) }}">
+                            <img src="{{ asset('assets/frontend/img/service/' . $project['image']) }}" alt="{{ $project['title'] }}">
+                        </a>
+                    </div>
+                </div>
+            @endforeach
                         </div>
                     </div>
                     <!-- Card TWO -->
@@ -109,7 +77,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services6.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services6.png" alt=""> </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -117,13 +85,13 @@
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services2.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services2.png" alt=""> </a>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services3.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services3.png" alt=""> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -131,19 +99,19 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services4.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services4.png" alt=""> </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services5.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services5.png" alt=""> </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services1.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services1.png" alt=""> </a>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +124,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services2.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services2.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -164,13 +132,13 @@
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services1.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services1.png" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services3.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services3.png" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -178,19 +146,19 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services4.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services4.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services5.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services5.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services6.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services6.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +171,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services1.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services1.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -211,13 +179,13 @@
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services2.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services2.png" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services3.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services3.png" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -225,19 +193,19 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services4.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services4.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services5.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services5.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services6.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services6.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +218,7 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services3.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services3.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
@@ -258,13 +226,13 @@
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services2.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services2.png" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <!-- Single -->
                                             <div class="single-services mb-30">
-                                                <img src="assets/img/service/services1.png" alt="">
+                                                <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services1.png" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -272,19 +240,19 @@
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services4.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services4.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services5.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend')}}/img/service/services5.png" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4">
                                     <!-- Single -->
                                     <div class="single-services mb-30">
-                                        <img src="assets/img/service/services6.png" alt="">
+                                        <a href=""> <img src="{{asset('assets/frontend/img/service/')}}. services6.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
