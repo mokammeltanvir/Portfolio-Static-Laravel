@@ -59,7 +59,7 @@ class PortfolioController extends Controller
             return view('frontend.pages.portfolio-details', compact('project'));
         } else {
             // Handle project not found
-            return view('project-not-found');
+            return view('frontend.pages.error');
         }
     }
 
